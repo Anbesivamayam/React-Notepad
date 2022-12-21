@@ -29,20 +29,21 @@ const App = () => {
 
     const fieldName = e.target.getAttribute("name");
     const fieldValue = e.target.value;
-    console.log("fieldName", fieldName);
-    console.log("fieldValue", fieldValue);
+    // console.log("fieldName", fieldName);
+    // console.log("fieldValue", fieldValue);
 
     const newFormData = { ...addTodo };
     newFormData[fieldName] = fieldValue;
-
+    
     setAddTodo(newFormData);
+    
   };
 
   const handleEditFormChange = (e) => {
     const fieldName = e.target.getAttribute("name");
     const fieldValue = e.target.value;
-    console.log("fieldName", fieldName);
-    console.log("fieldValue", fieldValue);
+    // console.log("fieldName", fieldName);
+    // console.log("fieldValue", fieldValue);
 
     const newFormData = { ...editTodo };
     newFormData[fieldName] = fieldValue;
@@ -52,7 +53,6 @@ const App = () => {
 
   const handleAddFormSubmit = (e) => {
     e.preventDefault();
-
     // console.log(addTodo.todo);
     const newTodo = {
       id: new Date().getTime().toString(),
@@ -60,7 +60,7 @@ const App = () => {
     };
     const newTodos = [...addItems, newTodo];
     setAddItems(newTodos);
-    console.log(addItems);
+    // console.log(addItems);
   };
 
   const handleEditClick = (todo) => {
@@ -101,8 +101,8 @@ const App = () => {
           TO-DO LIST
         </h1>
       </div>
-      {JSON.stringify(todoId)}
-      {JSON.stringify(editTodo)}
+      {/* {JSON.stringify(todoId)}
+      {JSON.stringify(editTodo)} */}
 
       <div className="">
         <Routes>

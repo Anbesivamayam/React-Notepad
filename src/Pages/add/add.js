@@ -10,7 +10,13 @@ const AddPage = ({
   editTodo,
   setEditTodo,
 }) => {
+
+  // const [clearField, setClearField] = useState("")
  
+  // const handleClearField = (e)=>{
+
+  //   setClearField("")
+  // }
   // const addList = () => {
   //   const allInput = { id: new Date().getTime().toString(), name: inputValue };
   //   addItems.push(allInput);
@@ -33,10 +39,11 @@ const AddPage = ({
       </div>
       <button
         className="tracking-[0.2em] text-white bg-gray-500 border-1 py-3 px-3 hover:bg-gray-700 rounded text-md first-letter.02em"
+       
       >
         ADD
       </button>
-      {JSON.stringify(addItems)}
+      {/* {JSON.stringify(addItems)} */}
     </form>
   );
 };
